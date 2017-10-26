@@ -41,7 +41,7 @@
 
     <dependencies>
         <!-- Compile/runtime dependencies -->
-        <!-- [START endpoints-frameworks] -->
+        <!-- [START endpoints_frameworks] -->
         <dependency>
             <groupId>com.google.endpoints</groupId>
             <artifactId>endpoints-framework</artifactId>
