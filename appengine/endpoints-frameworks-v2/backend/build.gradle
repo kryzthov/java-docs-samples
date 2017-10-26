@@ -40,14 +40,14 @@ task wrapper(type: Wrapper) {
 
 def projectId = 'YOUR_PROJECT_ID'
 
+// [START plugins_apply]
 apply plugin: 'java'
 apply plugin: 'war'
 // [START endpoints_plugin_apply]
 apply plugin: 'com.google.cloud.tools.endpoints-framework-server'
 // [END endpoints_plugin_apply]
-// [START appengine_plugin_apply]
 apply plugin: 'com.google.cloud.tools.appengine'
-// [END appengine_plugin_apply]
+// [END plugins_apply]
 
 dependencies {
     // [START endpoints_frameworks]
