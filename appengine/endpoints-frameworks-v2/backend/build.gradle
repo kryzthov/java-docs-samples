@@ -11,7 +11,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.import org.apache.tools.ant.filters.ReplaceTokens
-
+// [START endpoints_build_dependencies]
 buildscript {
   repositories {
     mavenCentral()
@@ -24,6 +24,7 @@ buildscript {
     classpath 'com.google.cloud.tools:appengine-gradle-plugin:1.3.3'
   }
 }
+// [END endpoints_build_dependencies]
 
 repositories {
     maven {
@@ -44,10 +45,14 @@ apply plugin: 'war'
 // [START endpoints_plugin_apply]
 apply plugin: 'com.google.cloud.tools.endpoints-framework-server'
 // [END endpoints_plugin_apply]
+// [START appengine_plugin_apply]
 apply plugin: 'com.google.cloud.tools.appengine'
+// [END appengine_plugin_apply]
 
 dependencies {
+    // [START endpoints_frameworks]
     compile 'com.google.endpoints:endpoints-framework:2.0.8'
+    // [END endpoints_frameworks]
     // [START api_management]
     compile 'com.google.endpoints:endpoints-management-control-appengine:1.0.5'
     compile 'com.google.endpoints:endpoints-framework-auth:1.0.5'
