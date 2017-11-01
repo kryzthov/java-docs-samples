@@ -96,7 +96,7 @@ Copyright 2016 Google Inc.
       <plugin>
         <groupId>com.google.appengine</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
-        <version>${appengine.sdk.version}</version>
+        <version>1.9.58</version>
       </plugin>
     </plugins>
   </build>
